@@ -129,7 +129,7 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   spec.requires_arc = true
-  spec.vendored_frameworks  = 'JADYunSpare.framework'
+  spec.vendored_frameworks  = 'JADYun.framework'
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64' }
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
