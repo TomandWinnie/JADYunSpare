@@ -117,7 +117,9 @@ Pod::Spec.new do |spec|
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
-
+    s.frameworks   = "SafariServices","CoreLocation","MapKit","AdSupport","CoreTelephony","SystemConfiguration", "ImageIO","Accelerate","Photos","AssetsLibrary","CoreServices","WebKit"
+    #s.weak_framework = 'WebKit'
+    s.libraries    = "sqlite3.0", "z"
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
