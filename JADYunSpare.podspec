@@ -130,6 +130,10 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
+  spec.xcconfig =
+  {
+    'OTHER_LDFLAGS' => '-ObjC'
+  }
   spec.requires_arc = true
   spec.vendored_frameworks  = 'JADYun.framework'
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64' }
